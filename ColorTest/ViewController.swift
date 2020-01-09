@@ -17,9 +17,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let rowData = colorArray[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "BasicCell", for: indexPath)
         cell.textLabel?.text = rowData
-        //cell.textLabel.font = [UIFont .preferredFontForTextStyle("Menlo")]
         cell.textLabel?.font = UIFont(name:"Menlo", size:22)
         cell.textLabel?.textAlignment = .center
+    
+        
+        //cell.appearance().textLabel?.textColor = UIColor.whiteColor()
+        //like to change when the button is pressed change the background color each color
+        //https://stackoverflow.com/questions/37518214/how-to-change-the-color-of-text-in-a-tableview-swift
+       
+        print(cell.selectedBackgroundView)
+   //     cell.selectedBackgroundView?.backgroundColor = .blue
+        
+       let backgroundView = UIView()
+       backgroundView.backgroundColor = .red
+        cell.selectedBackgroundView = backgroundView
+    
         return cell
     }
     
