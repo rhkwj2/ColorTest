@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9251828C23C98551001BC9FD /* ColorTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9251828B23C98551001BC9FD /* ColorTestTests.swift */; };
+		9251829423C98576001BC9FD /* ColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9251829323C98576001BC9FD /* ColorsTests.swift */; };
+		9260178F23C97CFC00F295ED /* ColorChoser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9260178E23C97CFC00F295ED /* ColorChoser.swift */; };
 		9287325B23A4B8A4008A7872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9287325A23A4B8A4008A7872 /* AppDelegate.swift */; };
 		9287325D23A4B8A4008A7872 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9287325C23A4B8A4008A7872 /* SceneDelegate.swift */; };
 		9287325F23A4B8A4008A7872 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9287325E23A4B8A4008A7872 /* ViewController.swift */; };
@@ -16,7 +19,22 @@
 		92A2DC8923C6D2FB005CE001 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A2DC8823C6D2FB005CE001 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9251828E23C98551001BC9FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9287324F23A4B8A4008A7872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9287325623A4B8A4008A7872;
+			remoteInfo = ColorTest;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		9251828923C98551001BC9FD /* ColorTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9251828B23C98551001BC9FD /* ColorTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTestTests.swift; sourceTree = "<group>"; };
+		9251828D23C98551001BC9FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9251829323C98576001BC9FD /* ColorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTests.swift; sourceTree = "<group>"; };
+		9260178E23C97CFC00F295ED /* ColorChoser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorChoser.swift; sourceTree = "<group>"; };
 		9287325723A4B8A4008A7872 /* ColorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9287325A23A4B8A4008A7872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9287325C23A4B8A4008A7872 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +47,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9251828623C98551001BC9FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9287325423A4B8A4008A7872 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +64,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9251828A23C98551001BC9FD /* ColorTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				9251828B23C98551001BC9FD /* ColorTestTests.swift */,
+				9251829323C98576001BC9FD /* ColorsTests.swift */,
+				9251828D23C98551001BC9FD /* Info.plist */,
+			);
+			path = ColorTestTests;
+			sourceTree = "<group>";
+		};
 		9287324E23A4B8A4008A7872 = {
 			isa = PBXGroup;
 			children = (
 				9287325923A4B8A4008A7872 /* ColorTest */,
+				9251828A23C98551001BC9FD /* ColorTestTests */,
 				9287325823A4B8A4008A7872 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				9287325723A4B8A4008A7872 /* ColorTest.app */,
+				9251828923C98551001BC9FD /* ColorTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +98,7 @@
 				9287325A23A4B8A4008A7872 /* AppDelegate.swift */,
 				9287325C23A4B8A4008A7872 /* SceneDelegate.swift */,
 				9287325E23A4B8A4008A7872 /* ViewController.swift */,
+				9260178E23C97CFC00F295ED /* ColorChoser.swift */,
 				92A2DC8823C6D2FB005CE001 /* ResultViewController.swift */,
 				9287326023A4B8A4008A7872 /* Main.storyboard */,
 				9287326323A4B8A7008A7872 /* Assets.xcassets */,
@@ -73,6 +111,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9251828823C98551001BC9FD /* ColorTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9251829023C98551001BC9FD /* Build configuration list for PBXNativeTarget "ColorTestTests" */;
+			buildPhases = (
+				9251828523C98551001BC9FD /* Sources */,
+				9251828623C98551001BC9FD /* Frameworks */,
+				9251828723C98551001BC9FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9251828F23C98551001BC9FD /* PBXTargetDependency */,
+			);
+			name = ColorTestTests;
+			productName = ColorTestTests;
+			productReference = 9251828923C98551001BC9FD /* ColorTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9287325623A4B8A4008A7872 /* ColorTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9287326B23A4B8A7008A7872 /* Build configuration list for PBXNativeTarget "ColorTest" */;
@@ -96,10 +152,14 @@
 		9287324F23A4B8A4008A7872 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Kim Yeon Jeong";
 				TargetAttributes = {
+					9251828823C98551001BC9FD = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 9287325623A4B8A4008A7872;
+					};
 					9287325623A4B8A4008A7872 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -119,11 +179,19 @@
 			projectRoot = "";
 			targets = (
 				9287325623A4B8A4008A7872 /* ColorTest */,
+				9251828823C98551001BC9FD /* ColorTestTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9251828723C98551001BC9FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9287325523A4B8A4008A7872 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,6 +205,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9251828523C98551001BC9FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9251828C23C98551001BC9FD /* ColorTestTests.swift in Sources */,
+				9251829423C98576001BC9FD /* ColorsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9287325323A4B8A4008A7872 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,11 +221,20 @@
 				9287325F23A4B8A4008A7872 /* ViewController.swift in Sources */,
 				9287325B23A4B8A4008A7872 /* AppDelegate.swift in Sources */,
 				92A2DC8923C6D2FB005CE001 /* ResultViewController.swift in Sources */,
+				9260178F23C97CFC00F295ED /* ColorChoser.swift in Sources */,
 				9287325D23A4B8A4008A7872 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9251828F23C98551001BC9FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9287325623A4B8A4008A7872 /* ColorTest */;
+			targetProxy = 9251828E23C98551001BC9FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9287326023A4B8A4008A7872 /* Main.storyboard */ = {
@@ -170,6 +256,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9251829123C98551001BC9FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Z2W5ZDA6N;
+				INFOPLIST_FILE = ColorTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.meibanfa.ColorTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorTest.app/ColorTest";
+			};
+			name = Debug;
+		};
+		9251829223C98551001BC9FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Z2W5ZDA6N;
+				INFOPLIST_FILE = ColorTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.meibanfa.ColorTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorTest.app/ColorTest";
+			};
+			name = Release;
+		};
 		9287326923A4B8A7008A7872 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -323,6 +449,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9251829023C98551001BC9FD /* Build configuration list for PBXNativeTarget "ColorTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9251829123C98551001BC9FD /* Debug */,
+				9251829223C98551001BC9FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9287325223A4B8A4008A7872 /* Build configuration list for PBXProject "ColorTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

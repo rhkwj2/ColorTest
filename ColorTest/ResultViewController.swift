@@ -11,17 +11,20 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
-    @IBOutlet weak var colerLabel: UILabel!
+    @IBOutlet weak var colorLabel: UILabel!
     
     @IBOutlet weak var colorExplanation: UITextView!
 
     @IBOutlet weak var colorImageView: UIImageView!
     
+    var chosenColor: KimColor!
+    
+    override func viewDidLoad() {
+        colorLabel.text = "\(chosenColor.getName())"
+      //  print("colorLabel.text: \(colorLabel.text)")
+    }
 }
 
 
 let colorImageView = [0,1,2,3,4,5,6,7,8]
 
-let colorNameArraw = ["Blue","Green","Red","Yellow","Violet","Brown","Grey","Black"]
-
-let colorExplanation = ["“Depth of Feeling” passive, concentric, tranquility, calm, tenderness","”Elasticity of Will” passive, concentric, defensive, persistence, self-esteem/assertion, pride, control","”Force of Will” ex-centric, active aggressive, competitive, action, desire, excitement, sexuality","“Spontaneity” ex-centric, active, projective, aspiring, expectancy, exhilaration ","“Identification” unrealistic/ wishful fulfillment, charm, enchantment","Bodily senses, indicates the body's condition ","Nothingness, renunciation, surrender or relinquishment ","Non-involvement and concealment"]

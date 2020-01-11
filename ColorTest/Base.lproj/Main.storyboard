@@ -27,9 +27,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="5HE-Ru-cXo" kind="show" destinationCreationSelector="showColorTestResult:" id="EKW-zu-fxh"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -49,6 +46,7 @@
                     <navigationItem key="navigationItem" title="Lüscher color test" id="vkq-x1-skE"/>
                     <connections>
                         <outlet property="myTableView" destination="BHY-qO-ocI" id="0dh-xM-cb0"/>
+                        <segue destination="5HE-Ru-cXo" kind="show" identifier="PushToResultViewController" id="Geb-uU-Y9l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -88,9 +86,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Result" id="e7f-a2-AU4"/>
                     <connections>
-                        <outlet property="colerLabel" destination="72w-74-vCV" id="K3R-Xs-tee"/>
                         <outlet property="colorExplanation" destination="WUP-lM-sHp" id="dse-oR-C0n"/>
                         <outlet property="colorImageView" destination="G5v-qJ-U8H" id="hw6-jp-k5r"/>
+                        <outlet property="colorLabel" destination="72w-74-vCV" id="K3R-Xs-tee"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L7v-ZP-oQC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
