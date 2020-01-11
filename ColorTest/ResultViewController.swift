@@ -20,8 +20,9 @@ class ResultViewController: UIViewController {
     var chosenColor: KimColor!
     
     override func viewDidLoad() {
-        colorLabel.text = "\(chosenColor.getName())"
-      //  print("colorLabel.text: \(colorLabel.text)")
+        colorImageView.backgroundColor = chosenColor.getUIColor()
+        colorLabel.text = "\(chosenColor.name)"
+        colorExplanation.text = chosenColor.getExplanation
     }
 }
 

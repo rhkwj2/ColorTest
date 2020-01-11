@@ -33,16 +33,17 @@ enum KimColor: Int {
         }
     }
     
-    func getName() -> String {
+    var name: String {
+        let colorNameArraw = ["Blue","Green","Red","Yellow","Violet","Brown","Grey","Black"]
+        
         return colorNameArraw[self.rawValue]
     }
     
-    func getExplanation() -> String {
+    var getExplanation: String {
+        let colorExplanation = ["“Depth of Feeling” passive, concentric, tranquility, calm, tenderness","”Elasticity of Will” passive, concentric, defensive, persistence, self-esteem/assertion, pride, control","”Force of Will” ex-centric, active aggressive, competitive, action, desire, excitement, sexuality","“Spontaneity” ex-centric, active, projective, aspiring, expectancy, exhilaration ","“Identification” unrealistic/ wishful fulfillment, charm, enchantment","Bodily senses, indicates the body's condition ","Nothingness, renunciation, surrender or relinquishment ","Non-involvement and concealment"]
+        
+        
         return colorExplanation[self.rawValue]
     }
 }
-
-let colorNameArraw = ["Blue","Green","Red","Yellow","Violet","Brown","Grey","Black"]
-
-let colorExplanation = ["“Depth of Feeling” passive, concentric, tranquility, calm, tenderness","”Elasticity of Will” passive, concentric, defensive, persistence, self-esteem/assertion, pride, control","”Force of Will” ex-centric, active aggressive, competitive, action, desire, excitement, sexuality","“Spontaneity” ex-centric, active, projective, aspiring, expectancy, exhilaration ","“Identification” unrealistic/ wishful fulfillment, charm, enchantment","Bodily senses, indicates the body's condition ","Nothingness, renunciation, surrender or relinquishment ","Non-involvement and concealment"]
 
